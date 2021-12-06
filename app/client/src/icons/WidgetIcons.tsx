@@ -35,6 +35,8 @@ import { ReactComponent as CheckboxGroupIcon } from "assets/icons/widget/checkbo
 import { ReactComponent as AudioRecorderIcon } from "assets/icons/widget/audio-recorder.svg";
 import { ReactComponent as ButtonGroupIcon } from "assets/icons/widget/button-group.svg";
 import { ReactComponent as SwitchGroupIcon } from "assets/icons/widget/switch-group.svg";
+import { ReactComponent as PhoneInput } from "assets/icons/widget/phoneInput.svg";
+import { ReactComponent as CurrencyInput } from "assets/icons/widget/currencyInput.svg";
 import styled from "styled-components";
 import { Colors } from "constants/Colors";
 
@@ -107,6 +109,11 @@ export const WidgetIcons: {
     </StyledIconWrapper>
   ),
   INPUT_WIDGET: (props: IconProps) => (
+    <StyledIconWrapper {...props}>
+      <InputIcon />
+    </StyledIconWrapper>
+  ),
+  INPUT_WIDGET_V2: (props: IconProps) => (
     <StyledIconWrapper {...props}>
       <InputIcon />
     </StyledIconWrapper>
@@ -229,6 +236,16 @@ export const WidgetIcons: {
   SWITCH_GROUP_WIDGET: (props: IconProps) => (
     <StyledIconWrapper {...props}>
       <SwitchGroupIcon />
+    </StyledIconWrapper>
+  ),
+  PHONE_INPUT_WIDGET: (props: IconProps) => (
+    <StyledIconWrapper {...props}>
+      <PhoneInput />
+    </StyledIconWrapper>
+  ),
+  CURRENCY_INPUT_WIDGET: (props: IconProps) => (
+    <StyledIconWrapper {...props}>
+      <CurrencyInput />
     </StyledIconWrapper>
   ),
 };
